@@ -48,14 +48,14 @@ namespace API.Controllers
                 }
                 info.Data = TreeviewCategory;
                 info.Message = Constant.DataSuccess;
-                info.Code = "200";
+                info.Code = Constant.SuccessCode;
                 return info;
             }
             else
             {
                 info.Data = null;
                 info.Message = Constant.DataError;
-                info.Code = "201";
+                info.Code = Constant.ErrorCode;
                 return info;
             }
         }

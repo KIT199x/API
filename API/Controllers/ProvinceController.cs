@@ -15,7 +15,7 @@ using System.Text;
 namespace API.Controllers
 {
     [ApiController]
-    [Route("api/tinh_thanhpho")]
+    [Route("api/danhmuctinhthanhpho")]
     public class ProvinceController : ControllerBase
     {
         private readonly ILogger<ProvinceController> _logger;
@@ -29,7 +29,7 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        [Route("get_tinh_thanhpho")]
+        [Route("get_danhmuctinhthanhpho")]
         public ResultAPI tinh_thanhpho(string Company)
         {
             List<Province> Provinces = new List<Province>();
@@ -39,14 +39,14 @@ namespace API.Controllers
             {
                 info.Data = Provinces;
                 info.Message = Constant.DataSuccess;
-                info.Code = "200";
+                info.Code = Constant.SuccessCode;
                 return info;
             }
             else
             {
                 info.Data = null;
                 info.Message = Constant.DataError;
-                info.Code = "201";
+                info.Code = Constant.ErrorCode;
                 return info;
             }
         }
@@ -59,15 +59,15 @@ namespace API.Controllers
             if (rst != "")
             {
                 info.Data = rst;
-                info.Message = "Thêm mới thành công";
-                info.Code = "200";
+                info.Message = Constant.AddSuccess;
+                info.Code = Constant.SuccessCode;
                 return info;
             }
             else
             {
                 info.Data = "";
-                info.Message = "Thêm mới thất bại";
-                info.Code = "201";
+                info.Message = Constant.AddError;
+                info.Code = Constant.ErrorCode;
                 return info;
             }
         }
@@ -80,15 +80,15 @@ namespace API.Controllers
             if (rst != "")
             {
                 info.Data = rst;
-                info.Message = "Sửa khách hàng thành công";
-                info.Code = "200";
+                info.Message = Constant.EditSuccess;
+                info.Code = Constant.SuccessCode;
                 return info;
             }
             else
             {
                 info.Data = "";
-                info.Message = "Sửa khách hàng thất bại";
-                info.Code = "201";
+                info.Message = Constant.EditError;
+                info.Code = Constant.ErrorCode;
                 return info;
             }
         }
@@ -101,15 +101,15 @@ namespace API.Controllers
             if (rst == true)
             {
                 info.Data = rst;
-                info.Message = "Xóa khách hàng thành công";
-                info.Code = "200";
+                info.Message = Constant.RemoveSuccess;
+                info.Code = Constant.SuccessCode;
                 return info;
             }
             else
             {
                 info.Data = "";
-                info.Message = "Xóa khách hàng thất bại";
-                info.Code = "201";
+                info.Message = Constant.RemoveError;
+                info.Code = Constant.ErrorCode;
                 return info;
             }
         }
@@ -122,15 +122,15 @@ namespace API.Controllers
             if (rst == true)
             {
                 info.Data = rst;
-                info.Message = "Import khách hàng thành công";
-                info.Code = "200";
+                info.Message = Constant.ImportSuccess;
+                info.Code = Constant.SuccessCode;
                 return info;
             }
             else
             {
                 info.Data = "";
-                info.Message = "Import khách hàng thất bại";
-                info.Code = "201";
+                info.Message = Constant.ImportError;
+                info.Code = Constant.ErrorCode;
                 return info;
             }
         }

@@ -1,4 +1,5 @@
-﻿using API.IRepository;
+﻿using API.Common;
+using API.IRepository;
 using API.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -46,16 +47,16 @@ namespace API.Controllers
             if (infologin.Count == 1)
             {
                 info.Data = infologin.FirstOrDefault();
-                info.Message = "Đăng nhập thành công";
-                info.Code = "200";
+                info.Message = Constant.LoginSuccess;
+                info.Code = Constant.SuccessCode;
                 info.Token = generateJwtToken(infologin.FirstOrDefault());
                 return info;
             }
             else
             {
                 info.Data = infologin;
-                info.Message = "Đăng nhập thất bại";
-                info.Code = "201";
+                info.Message = Constant.LoginError;
+                info.Code = Constant.ErrorCode;
                 return info;
             }
         }

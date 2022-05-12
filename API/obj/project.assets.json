@@ -1658,19 +1658,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nguye\\.nuget\\packages\\": {}
+    "C:\\Users\\kiennb\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nguye\\Documents\\KITSoftware\\API\\API\\API.csproj",
+      "projectUniqueName": "E:\\KienNB\\API\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\nguye\\Documents\\KITSoftware\\API\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nguye\\Documents\\KITSoftware\\API\\API\\obj\\",
+      "projectPath": "E:\\KienNB\\API\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\kiennb\\.nuget\\packages\\",
+      "outputPath": "E:\\KienNB\\API\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kiennb\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1743,7 +1743,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
       }
     }
   }
