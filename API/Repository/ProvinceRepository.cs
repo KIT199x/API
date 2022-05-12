@@ -31,12 +31,12 @@ namespace API.Repository
             var param = new DynamicParameters();
             param.Add("@pId", Guid.NewGuid(), DbType.Guid);
             param.Add("@pCompany", Province.Company, DbType.String);
-            //param.Add("@pMa_khach_hang", Province.Ma_khach_hang, DbType.String);
-            //param.Add("@pTen_khach_hang", Province.Ten_khach_hang, DbType.String);
-            //param.Add("@pDia_chi", Province.Dia_chi, DbType.String);
-            //param.Add("@pDien_thoai", Province.Dien_thoai, DbType.String);
-            //param.Add("@pEmail", Province.Email, DbType.String);
+            param.Add("@pCode", Province.Code, DbType.String);
+            param.Add("@pName", Province.Name, DbType.String);
+            param.Add("@pLevel", Province.Level, DbType.String);
             param.Add("@pStatus", Province.Status, DbType.String);
+            param.Add("@pUser", Province.CreateBy, DbType.String);
+            param.Add("@pDatetime", Province.CreateDate, DbType.DateTime);
             using (var connection = _context.CreateConnection())
             {
                 var Id = connection.Execute("AddProvince", param, commandType: CommandType.StoredProcedure);
