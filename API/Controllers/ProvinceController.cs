@@ -72,7 +72,7 @@ namespace API.Controllers
             }
         }
         [HttpPut]
-        [Route("sua_khach_hang")]
+        [Route("sua_danhmuctinhthanhpho")]
         public ResultAPI sua_khach_hang([FromBody] Province Province)
         {
             ResultAPI info = new ResultAPI();
@@ -93,7 +93,7 @@ namespace API.Controllers
             }
         }
         [HttpDelete]
-        [Route("xoa_khach_hang")]
+        [Route("xoa_danhmuctinhthanhpho")]
         public ResultAPI xoa_khach_hang(string Id, string Company)
         {
             ResultAPI info = new ResultAPI();

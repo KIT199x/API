@@ -4,7 +4,7 @@ namespace API.Models
 {
     public class Account
     {
-        private string _accountId;
+        private string _id;
         private string _company;
         private string _userName;
         private string _password;
@@ -19,7 +19,7 @@ namespace API.Models
         private int _status;
         private string _country;
 
-        public string AccountId { get => _accountId; set => _accountId = value; }
+        public string Id { get => _id; set => _id = value; }
         public string UserName { get => _userName; set => _userName = value; }
         public string Password { get => _password; set => _password = value; }
         public string FullName { get => _fullName; set => _fullName = value; }
