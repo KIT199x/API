@@ -37,6 +37,8 @@ namespace API.Repository
             param.Add("@pDien_thoai", Customer.Dien_thoai, DbType.String);
             param.Add("@pEmail", Customer.Email, DbType.String);
             param.Add("@pStatus", Customer.Status, DbType.String);
+            param.Add("@pUser", Customer.CreateBy, DbType.String);
+            param.Add("@pDatetime", Customer.CreateDate, DbType.DateTime);
             using (var connection = _context.CreateConnection())
             {
                 var Id = connection.Execute("AddCustomer", param, commandType: CommandType.StoredProcedure);
@@ -54,6 +56,8 @@ namespace API.Repository
             param.Add("@pDien_thoai", Customer.Dien_thoai, DbType.String);
             param.Add("@pEmail", Customer.Email, DbType.String);
             param.Add("@pStatus", Customer.Status, DbType.String);
+            param.Add("@pUser", Customer.ModifyBy, DbType.String);
+            param.Add("@pDatetime", Customer.ModifyDate, DbType.DateTime);
             using (var connection = _context.CreateConnection())
             {
                 var Id = connection.Execute("UpdateCustomer", param, commandType: CommandType.StoredProcedure);

@@ -26,8 +26,9 @@ namespace API
             services.AddSingleton<DapperContext>();
             services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddScoped<IFunctionRepository, FunctionRepository>();
-            services.AddScoped<ICustomerRepository, CustomerRepository>();
+            services.AddScoped<ICustomerRepository, CustomerRepository>();  
             services.AddScoped<IProvinceRepository, ProvinceRepository>();
+            services.AddScoped<IDistrictRepository, DistrictRepository>();
             services.AddControllers();
             services.AddCors();//thêm
             services.AddControllersWithViews();

@@ -84,7 +84,6 @@ C:\Users\nguye\Documents\KITSoftware\API\API\bin\Debug\net5.0\Microsoft.Identity
 C:\Users\nguye\Documents\KITSoftware\API\API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\nguye\Documents\KITSoftware\API\API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\nguye\Documents\KITSoftware\API\API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\nguye\Documents\KITSoftware\API\API\obj\Debug\net5.0\API.csproj.AssemblyReference.cache
 E:\KienNB\API\API\bin\Debug\net5.0\log4net.config
 E:\KienNB\API\API\bin\Debug\net5.0\appsettings.Development.json
 E:\KienNB\API\API\bin\Debug\net5.0\appsettings.json
@@ -131,3 +130,4 @@ E:\KienNB\API\API\obj\Debug\net5.0\API.dll
 E:\KienNB\API\API\obj\Debug\net5.0\ref\API.dll
 E:\KienNB\API\API\obj\Debug\net5.0\API.pdb
 E:\KienNB\API\API\obj\Debug\net5.0\API.genruntimeconfig.cache
+C:\Users\nguye\Documents\KITSoftware\API\API\obj\Debug\net5.0\API.csproj.AssemblyReference.cache
