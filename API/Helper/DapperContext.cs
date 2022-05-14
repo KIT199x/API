@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace API.Common
+namespace API.Helper
 {
     public class DapperContext
     {

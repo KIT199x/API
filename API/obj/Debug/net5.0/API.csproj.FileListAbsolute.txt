@@ -114,7 +114,6 @@ E:\KienNB\API\API\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
 E:\KienNB\API\API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 E:\KienNB\API\API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 E:\KienNB\API\API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-E:\KienNB\API\API\obj\Debug\net5.0\API.csproj.AssemblyReference.cache
 E:\KienNB\API\API\obj\Debug\net5.0\API.GeneratedMSBuildEditorConfig.editorconfig
 E:\KienNB\API\API\obj\Debug\net5.0\API.AssemblyInfoInputs.cache
 E:\KienNB\API\API\obj\Debug\net5.0\API.AssemblyInfo.cs
@@ -131,3 +130,9 @@ E:\KienNB\API\API\obj\Debug\net5.0\ref\API.dll
 E:\KienNB\API\API\obj\Debug\net5.0\API.pdb
 E:\KienNB\API\API\obj\Debug\net5.0\API.genruntimeconfig.cache
 C:\Users\nguye\Documents\KITSoftware\API\API\obj\Debug\net5.0\API.csproj.AssemblyReference.cache
+E:\KienNB\API\API\bin\Debug\net5.0\QRCoder.dll
+E:\KienNB\API\API\bin\Debug\net5.0\System.Drawing.Common.dll
+E:\KienNB\API\API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\KienNB\API\API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\KienNB\API\API\bin\Debug\net5.0\Common.dll
+E:\KienNB\API\API\bin\Debug\net5.0\Common.pdb

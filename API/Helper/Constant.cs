@@ -1,12 +1,4 @@
-﻿using EASendMail;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Threading.Tasks;
-
-namespace API.Common
+﻿namespace API.Helper
 {
     public static class Constant 
     {
