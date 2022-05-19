@@ -1,6 +1,7 @@
-﻿using API.Common;
+﻿using API.Helper;
 using API.IRepository;
 using API.Models;
+using Common;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
@@ -39,7 +40,7 @@ namespace API.Controllers
         [Route("dang_nhap")]
         public ResultLoginAPI dang_nhap([FromBody] Account account)
         {
-            var password = Common.Common.Encrypt(account.Password, configuration.GetSection("MySettings").GetSection("KeyAES").Value, 128);
+            var password = EncryptDecrypt.Encrypt(account.Password, configuration.GetSection("MySettings").GetSection("KeyAES").Value, 128);
             account.Password = password;
             List<Account> infologin = new List<Account>();
             ResultLoginAPI info = new ResultLoginAPI();
