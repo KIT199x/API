@@ -18,6 +18,7 @@ namespace API.Models
         private string _phone;
         private int _status;
         private string _country;
+        private string _email;
 
         public string Id { get => _id; set => _id = value; }
         public string UserName { get => _userName; set => _userName = value; }
@@ -33,5 +34,6 @@ namespace API.Models
         public int Status { get => _status; set => _status = value; }
         public string Country { get => _country; set => _country = value; }
         public string Company { get => _company; set => _company = value; }
+        public string Email { get => _email; set => _email = value; }
     }
 }

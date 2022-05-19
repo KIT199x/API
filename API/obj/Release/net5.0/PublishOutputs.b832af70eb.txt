@@ -13,6 +13,7 @@ E:\KienNB\API\API\obj\Release\net5.0\PubTmp\Out\Microsoft.IdentityModel.JsonWebT
 E:\KienNB\API\API\obj\Release\net5.0\PubTmp\Out\Microsoft.IdentityModel.Logging.dll
 E:\KienNB\API\API\obj\Release\net5.0\PubTmp\Out\Microsoft.IdentityModel.Tokens.dll
 E:\KienNB\API\API\obj\Release\net5.0\PubTmp\Out\Microsoft.OpenApi.dll
+E:\KienNB\API\API\obj\Release\net5.0\PubTmp\Out\Newtonsoft.Json.dll
 E:\KienNB\API\API\obj\Release\net5.0\PubTmp\Out\QRCoder.dll
 E:\KienNB\API\API\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
 E:\KienNB\API\API\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll

@@ -95,3 +95,4 @@ E:\KienNB\API\API\obj\Release\net5.0\API.dll
 E:\KienNB\API\API\obj\Release\net5.0\ref\API.dll
 E:\KienNB\API\API\obj\Release\net5.0\API.pdb
 E:\KienNB\API\API\obj\Release\net5.0\API.genruntimeconfig.cache
+E:\KienNB\API\API\bin\Release\net5.0\Newtonsoft.Json.dll

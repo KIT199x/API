@@ -17,6 +17,8 @@
         public const string ImportError = "Import dữ liệu thất bại";
         public const string ExportSuccess = "Export dữ liệu thành công";
         public const string ExportError = "Export dữ liệu thất bại";
+        public const string RegisterSuccess = "Đăng ký thành công";
+        public const string RegisterError = "Đăng ký thất bại";
         #endregion
 
         #region Status

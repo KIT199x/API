@@ -136,3 +136,5 @@ E:\KienNB\API\API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawin
 E:\KienNB\API\API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 E:\KienNB\API\API\bin\Debug\net5.0\Common.dll
 E:\KienNB\API\API\bin\Debug\net5.0\Common.pdb
+E:\KienNB\API\API\bin\Debug\net5.0\Newtonsoft.Json.dll
+E:\KienNB\API\API\obj\Debug\net5.0\API.csproj.AssemblyReference.cache

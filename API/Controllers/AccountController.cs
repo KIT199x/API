@@ -61,6 +61,30 @@ namespace API.Controllers
                 return info;
             }
         }
+        [HttpPost]
+        [Route("dang_ky")]
+        public ResultAPI dang_ky([FromBody] Account account)
+        {
+            var password = EncryptDecrypt.Encrypt(account.Password, configuration.GetSection("MySettings").GetSection("KeyAES").Value, 128);
+            account.Password = password;
+            Account inforegister = new Account();
+            ResultAPI info = new ResultAPI();
+            inforegister = _accRepo.AddAccount(account);
+            if (inforegister != null)
+            {
+                info.Data = inforegister;
+                info.Message = Constant.RegisterSuccess;
+                info.Code = Constant.SuccessCode;
+                return info;
+            }
+            else
+            {
+                info.Data = inforegister;
+                info.Message = Constant.RegisterError;
+                info.Code = Constant.ErrorCode;
+                return info;
+            }
+        }
         private string generateJwtToken(Account account)
         {
             // generate token that is valid for 7 days
