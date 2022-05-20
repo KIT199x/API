@@ -14,10 +14,13 @@ namespace API.Controllers
 
         [HttpGet]
         [Route("get_voucher")]
-        public List<Product> get_voucher()
+        public List<Data> get_voucher()
         {
-            HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create("https://data.polyxgo.com/api/v1/datax/shopee_vouchers");
+            HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create("https://api.accesstrade.vn/v1/offers_informations/coupon?page=2&limit=10&merchant=4742147753565840242,4348611690224153209,&category=E-COMMERCE,&campaign=4751584435713464237,4348614231480407268,&keyword=&url=&utm_source=&utm_medium=&utm_campaign=&utm_content=&data_sub1=&data_sub2=&data_sub3=&data_sub4=&data_sub5=&sort=0");
             request.Method = "GET";
+            request.Headers.Add("Accept", "*/*");
+            request.Headers.Add("Authorization", " Token 5857904480039377044");
+            request.Headers.Add("Content-Type", "application/json");
             String responseJson = String.Empty;
             using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
             {
@@ -27,50 +30,47 @@ namespace API.Controllers
                 reader.Close();
                 dataStream.Close();
             }
-            var result = JsonConvert.DeserializeObject<Part1>(responseJson);
-            var str = result.value.ToString();
-            str = str.Substring(1, str.Length-2);
-            var voucher = JsonConvert.DeserializeObject<Part2>(str);
-            return voucher.vouchers;
+            var voucher = JsonConvert.DeserializeObject<Part1>(responseJson);
+            return voucher.data;
         }
         public class Part1
         {
-            public string key { get; set; }
-            public object value { get; set; }
+            public int count { get; set; }
+            public List<Data> data { get; set; }
         }
-        public class Part2
+        public class Data
         {
-            public string category { get; set; }
-            public List<Product> vouchers { get; set; }
-        }
-        public class Product
-        {
-            public string voucher_market_type { get; set; }
-            public string product_message { get; set; }
-            public string logistic { get; set; }
-            public string devices { get; set; }
-            public string payments { get; set; }
-            public string reward_percentage { get; set; }
-            public string product_limit { get; set; }
-            public int shop_id { get; set; }
-            public string shop_name { get; set; }
-            public string use_type { get; set; }
-            public string max_value { get; set; }
-            public long promotionid { get; set; }
-            public string signature { get; set; }
-            public string icon_text { get; set; }
-            public string usage_terms { get; set; }
-            public long min_spend { get; set; }
-            public string discount_percentage { get; set; }
+            public string aff_link { get; set; }
+            public string aff_link_campaign_tag { get; set; }
+            public object banner { get; set; }
+            public string campaign { get; set; }
+            public string campaignid { get; set; }
+            public string campaign_name { get; set; }
+            public object categories { get; set; }
+            public long coin_cap { get; set; }
+            public long coin_percentage { get; set; }
+            public string content { get; set; }
+            public object counpons { get; set; }
+            public long discount_percentage { get; set; }
             public string discount_value { get; set; }
-            public string coin_percentage { get; set; }
-            public string coin_cap { get; set; }
-            public string voucher_code { get; set; }
-            public string usage_limit_per_user { get; set; }
-            public string shop_logo { get; set; }
-            public string start_time { get; set; }
+            public string domain { get; set; }
             public string end_time { get; set; }
-            public bool is_shop_official { get; set; }
+            public string id { get; set; }
+            public string images { get; set; }
+            public bool is_hot { get; set; }
+            public object keywword { get; set; }
+            public string link { get; set; }
+            public long max_value { get; set; }
+            public string merchant { get; set; }
+            public long min_spend { get; set; }
+            public string name { get; set; }
+            public string prior_type { get; set; }
+            public int remain { get; set; }
+            public bool remain_true { get; set; }
+            public string shop_id { get; set; }
+            public string start_time { get; set; }
+            public string status { get; set; }
+            public string time_left { get; set; }
         }
     }
 }
